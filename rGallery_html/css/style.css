@@ -1,0 +1,35 @@
+body{
+  font-family: 'Georgia', 'Arial', sans-serif;
+}
+
+
+.navbar { min-height:38px;margin-bottom:20px !important; border-radius:0;}
+.navbar .navbar-brand{ padding: 0 12px;font-size: 16px;line-height: 38px;height: 38px; }
+.navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 38px; color:#fff;}
+.navbar .navbar-toggle {  margin-top: 3px; margin-bottom: 0px; padding: 8px 9px; }
+.navbar .navbar-form { margin-top: 2px; margin-bottom: 0px }
+.navbar .navbar-collapse {border-color: #A40303;}
+
+h1,h2 {
+  border-left:5px #666 solid;
+  border-bottom: 1px #666 solid;
+  padding: 0 0 5px 10px;
+  margin-bottom:30px;
+}
+
+#gallery img{
+  width:100%;
+}
+
+.col-md-3{
+  padding:0px;
+}
+
+footer{
+  margin-top:30px;
+  height:40px;
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding-top: 10px;
+}
