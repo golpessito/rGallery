@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get "upload" => "images#index", as: "upload"
+  get "upload" => "images#new", as: "upload"
 
   get 'images/create'
 
