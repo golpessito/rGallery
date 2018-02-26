@@ -15,4 +15,19 @@
   </div><br>
   <%= f.submit "Submit", class:"btn btn-primary" %>
   <%= link_to "Cancel", categories_path, class:"btn btn-default" %>
-<% end %>
+<% end %><br>
+<h3 class="page-header">Images in <%= @category.name %></h3>
+<div id="edit_images">
+  <% if @images.exists? %>
+    <% @images.each_slice(6) do |image| %>
+      <div class="row">
+        <% image.each do |image| %>
+          <div class="col-md-2">
+            <%= image_tag image.image_url(:thumb) %>
+            <%= link_to "Delete", image_path(image), method: :delete, data: {confirm:"Are you sure?"}, class:"btn btn-danger" %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -13,9 +13,19 @@ class CategoriesController < ApplicationController
   end
 
   def edit
+    @category=Category.find(params[:id])
+    @images=@category.images
   end
 
   def update
+    @category=Category.find(params[:id])
+
+    if @category.update(category_params)
+      flash[:notice] = "Category Update"
+      redirect_to images_path
+    else
+      render "edit"
+    end
   end
 
   def show
